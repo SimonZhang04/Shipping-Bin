@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="190dp"
+        app:layoutManager="LinearLayoutManager" />
+
+    <LinearLayout
+        android:id="@+id/bottomBox"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/artisan_switch"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Artisan Profession"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toTopOf="@id/calculate_button"
+        app:layout_constraintStart_toEndOf="@id/artisan_icon"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/artisan_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/artisan"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/tiller_switch"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Tiller Profession"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="60dp" />
+
+    <ImageView
+        android:id="@+id/tiller_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/tiller"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="110dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:id="@+id/total_profit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Total: 0G"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="160dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tiller_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</FrameLayout>

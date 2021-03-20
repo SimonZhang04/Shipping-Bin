@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shipping Bin</string>
+    <string name="crop1">Parsnip</string>
+    <string name="crop2">Potato</string>
+    <string name="crop3">Kale</string>
+    <string name="crop4">Strawberry</string>
+    <string name="crop5">Cauliflower</string>
+    <string name="crop6">Garlic</string>
+    <string name="crop7">Green Bean</string>
+    <string name="crop8">Rhubarb</string>
+    <string name="crop9">Blue Jazz</string>
+    <string name="crop10">Coffee Bean</string>
+    <string name="crop11">Tulip</string>
+    <string name="crop12">Unmilled Rice</string>
+</resources>
